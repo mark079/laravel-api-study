@@ -17,4 +17,5 @@ Route::prefix('v1')->group(function () {
     // invoices
     Route::get('/invoices', [InvoiceController::class, 'index']);
     Route::get('/invoices/{invoice}', [InvoiceController::class, 'show']);
+    Route::post('/invoices', [InvoiceController::class, 'store']);
 });
